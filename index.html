@@ -5,79 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>wewaked</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background: #111;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    nav {
-      background: #222;
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #2c2c2c;
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
+      min-height: 100vh;
     }
-    nav a {
+
+    aside {
+      background-color: #1f1f1f;
       color: white;
+      width: 220px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: fixed;
+      height: 100vh;
+    }
+
+    aside h1 {
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ffc107;
+    }
+
+    aside nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    aside nav a {
+      color: #ddd;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    aside nav a:hover {
+      color: #ffc107;
     }
-    .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+
+    main {
+      margin-left: 220px;
+      padding: 3rem;
+      width: 100%;
     }
-    .category {
-      margin-bottom: 2rem;
+
+    section.category {
+      margin-bottom: 4rem;
     }
-    .category h2 {
+
+    section.category h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
     }
+
     .post-preview {
-      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-left: 4px solid #ffc107;
+      margin-bottom: 1rem;
       font-style: italic;
       color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>wewaked</h1>
-    <p>Stories and thoughts from our shared journey</p>
-  </header>
+  <aside>
+    <h1>WEWAKED</h1>
+    <nav>
+      <a href="#travel">Travel</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#fiction">Fiction</a>
+    </nav>
+  </aside>
 
-  <nav>
-    <a href="#travel">Travel</a>
-    <a href="#gaming">Gaming</a>
-    <a href="#fiction">Fiction</a>
-  </nav>
-
-  <main class="content">
+  <main>
     <section id="travel" class="category">
       <h2>Travel</h2>
-      <div class="post-preview">Coming soon...</div>
+      <div class="post-preview">Coming soon: Adventures across continents, cultures, and coastlines.</div>
     </section>
 
     <section id="gaming" class="category">
       <h2>Gaming</h2>
-      <div class="post-preview">Coming soon...</div>
+      <div class="post-preview">Coming soon: Reflections from fantasy realms, pixel worlds, and boss battles.</div>
     </section>
 
     <section id="fiction" class="category">
       <h2>Fiction</h2>
-      <div class="post-preview">Coming soon...</div>
+      <div class="post-preview">Coming soon: Short stories, characters, and imaginative arcs that wake the world.</div>
     </section>
+
+    <footer>
+      &copy; 2025 WEWAKED. All rights reserved.
+    </footer>
   </main>
 </body>
 </html>
